@@ -9,6 +9,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'tremendous-porpoise-212.convex.cloud'
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.clerk.com'
             }
         ]
     }
