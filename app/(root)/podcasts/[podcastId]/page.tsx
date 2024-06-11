@@ -12,7 +12,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const PodcastDetails = ({ params: {podcastId} }: { params: { podcastId: Id<'podcasts'> }}) => {
-    const user = useUser()
+    const { user } = useUser()
 
     const podcast = useQuery(api.podcasts.getPodcastById, {podcastId})
     const similarPodcasts = useQuery(api.podcasts.getPodcastByVoiceType, {podcastId})
